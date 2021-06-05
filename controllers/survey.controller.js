@@ -29,6 +29,7 @@ class SurveyController extends Controller {
         res.render("layouts/survey.layout.ejs", this.page_params);
     }
 
+    // commit 5
     async process(req, res) {
         await SurveyModel.createSurvey(req.body.name, req.body.dojo_location, req.body.fave_lang, req.body.comment);
         res.redirect("/success");
