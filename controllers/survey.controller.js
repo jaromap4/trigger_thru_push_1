@@ -18,7 +18,6 @@ class SurveyController extends Controller {
     }
 
     async success(req, res) {
-        // success
         let response_data = await SurveyModel.getSurvey();
 		this.page_params.PAGE.title = "Success!";
         this.page_params.PAGE.view = "success";
