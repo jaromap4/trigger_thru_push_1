@@ -15,7 +15,7 @@ class SurveyController extends Controller {
         this.page_params.PAGE.assets.stylesheets.push({ file: `/public/css/custom/survey/${this.page_params.PAGE.view}.css` });
         
         res.render("layouts/survey.layout.ejs", this.page_params);
-        // fourth commit
+        // eight commit
     }
 
     async success(req, res) {
